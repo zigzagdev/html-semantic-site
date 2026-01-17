@@ -6,67 +6,37 @@
     <title>Vancouver Tech Meetup – 月例コミュニティイベント</title>
     <meta name="description" content="バンクーバーの架空テックミートアップのランディングページ。" />
 
-    <link rel="stylesheet" href="./assets/css/main.css" />
+<!--    <link rel="stylesheet" href="assets/css/common/base.css" />-->
+<!--    <link rel="stylesheet" href="assets/css/common/layout.css" />-->
+    <link rel="stylesheet" href="assets/css/pages/main.css" />
     <link rel="icon" href="./assets/img/vancouver.webp" />
 </head>
 
 <body>
-<a class="skip-link" href="#main">本文へスキップ</a>
-
-<header class="site-header" role="banner">
-    <div class="l-container site-header__inner">
-        <a class="site-brand" href="./index.html" aria-label="Vancouver Tech Meetup ホーム">
-            Vancouver Tech Meetup
-        </a>
-
-        <nav class="site-nav" aria-label="メインナビゲーション">
-            <ul class="nav-list">
-                <li><a class="nav-link" href="#overview">概要</a></li>
-                <li><a class="nav-link" href="#timetable">タイムテーブル</a></li>
-                <li><a class="nav-link" href="#speakers">スピーカー</a></li>
-                <li><a class="nav-link" href="#venue">会場</a></li>
-                <li><a class="nav-link" href="#faq">FAQ</a></li>
+<header class="header">
+    <div class="header__inner">
+        <h1 class="header__title">Vancouver Tech Meetup</h1>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="./index.html" class="header__nav-link">ホーム</a></li>
+                <li class="header__nav-item"><a href="./faq.html" class="header__nav-link">よくある質問</a></li>
+                <li class="header__nav-item"><a href="./contact.html" class="header__nav-link">お問い合わせ</a></li>
             </ul>
         </nav>
-
-        <a class="c-button c-button--primary site-header__cta" href="#cta">参加する</a>
-
     </div>
+
 </header>
 
 <main id="main" class="site-main">
     <div class="l-container l-main-layout">
-
-        <details class="c-drawer c-drawer--main">
-            <summary class="c-drawer__toggle" aria-label="補助メニューを開く">☰</summary>
-
-            <nav class="c-drawer__panel" aria-label="補助メニュー">
-                <ul class="c-drawer__list">
-                    <li><a class="c-drawer__link" href="./about.html">About</a></li>
-                    <li><a class="c-drawer__link" href="./contact.html">Contact</a></li>
-                    <li><a class="c-drawer__link" href="#faq">FAQ（このページ）</a></li>
-                </ul>
-            </nav>
-        </details>
-
-        <aside class="site-sidebar" aria-label="補助ナビ">
-            <nav class="site-sidebar__nav">
-                <ul class="site-sidebar__list">
-                    <li><a class="site-sidebar__link" href="./about.html">About</a></li>
-                    <li><a class="site-sidebar__link" href="./contact.html">Contact</a></li>
-                    <li><a class="site-sidebar__link" href="#faq">FAQ（このページ）</a></li>
-                </ul>
-            </nav>
-        </aside>
-
         <div class="site-content">
 
-            <section class="hero" aria-labelledby="hero-title">
+            <section class="section" aria-labelledby="hero-title">
                 <h1 id="hero-title" class="hero-title">実務に効くトーク。つながる場。</h1>
 
                 <p class="hero-lead">
                     バンクーバーの架空テックミートアップのランディングページ。<br/>
-                    セマンティックHTMLと設計されたCSSのみで構築しています。
+                    セマンティックHTMLとCSSのみで構築しています。
                 </p>
 
                 <dl class="hero-meta">
@@ -106,7 +76,7 @@
             </section>
 
             <section id="timetable" class="section" aria-labelledby="timetable-title">
-                <h2 id="timetable-title" class="section-title">タイムテーブル</h2>
+                <h2 id="timetable-title" class="section-title__timetable">タイムテーブル</h2>
 
                 <ol class="timetable">
                     <li class="timetable__item">
@@ -197,75 +167,50 @@
                 </ul>
             </section>
 
-<!--            <section id="venue" class="section" aria-labelledby="venue-title">-->
-<!--                <h2 id="venue-title" class="section-title">会場</h2>-->
-
-<!--                <div class="l-grid l-grid&#45;&#45;2">-->
-<!--                    <div class="c-card">-->
-<!--                        <h3 class="c-card__title">場所</h3>-->
-<!--                        <p class="c-card__text">ダウンタウン・バンクーバー（詳細は会場ページをご確認ください）。</p>-->
-<!--                        <p class="c-card__text"><a class="c-link" href="./venue.html">会場詳細を見る →</a></p>-->
-<!--                    </div>-->
-
-<!--                    <figure class="c-card venue-map">-->
-<!--                        <img src="./assets/venue-map.png"-->
-<!--                             alt="ダウンタウン・バンクーバー周辺の会場エリアを示す静的マップ画像"-->
-<!--                             loading="lazy" />-->
-<!--                        <figcaption class="venue-map__caption">静的マップ画像（JavaScriptなし）</figcaption>-->
-<!--                    </figure>-->
-<!--                </div>-->
-<!--            </section>-->
-
-<!--            <section id="faq" class="section" aria-labelledby="faq-title">-->
-<!--                <h2 id="faq-title" class="section-title">よくある質問</h2>-->
-
-<!--                <div class="faq">-->
-<!--                    <details class="faq__item">-->
-<!--                        <summary class="faq__q">初心者でも参加できますか？</summary>-->
-<!--                        <div class="faq__a">-->
-<!--                            <p>はい。トークは実務寄りで、ネットワーキングは話題プロンプト付きで進行します。</p>-->
-<!--                        </div>-->
-<!--                    </details>-->
-
-<!--                    <details class="faq__item">-->
-<!--                        <summary class="faq__q">持ち物は必要ですか？</summary>-->
-<!--                        <div class="faq__a">-->
-<!--                            <p>特にありません。ノートPCは任意です。</p>-->
-<!--                        </div>-->
-<!--                    </details>-->
-
-<!--                    <details class="faq__item">-->
-<!--                        <summary class="faq__q">これは実在するイベントですか？</summary>-->
-<!--                        <div class="faq__a">-->
-<!--                            <p>いいえ。本プロジェクトはHTML/CSS設計の演習として作成した静的ランディングページです。</p>-->
-<!--                        </div>-->
-<!--                    </details>-->
-<!--                </div>-->
-<!--            </section>-->
-
-<!--            <section id="cta" class="section section&#45;&#45;cta" aria-labelledby="cta-title">-->
-<!--                <h2 id="cta-title" class="section-title">次回ミートアップに参加する</h2>-->
-<!--                <p class="section-text">席数に限りがあります。参加登録（contactページはUIのみ）へ。</p>-->
-
-<!--                <div class="cta-actions">-->
-<!--                    <a class="c-button c-button&#45;&#45;primary" href="./contact.html">登録UIへ進む</a>-->
-<!--                    <a class="c-button c-button&#45;&#45;secondary" href="./about.html">行動規範（Code of Conduct）を見る</a>-->
-<!--                </div>-->
-<!--            </section>-->
-
         </div>
     </div>
+
+    <section class="prefooter-cta" aria-labelledby="prefooter-cta-title">
+        <div class="prefooter-cta__inner">
+            <div class="prefooter-cta__content">
+                <h2 id="prefooter-cta-title" class="prefooter-cta__title">お問い合わせ</h2>
+                <p class="prefooter-cta__text">
+                    ミートアップ参加や内容に関する質問があれば、お気軽にご連絡ください。
+                </p>
+            </div>
+
+            <a class="prefooter-cta__button" href="./contact.html" aria-label="お問い合わせページへ">
+                お問い合わせはこちら →
+            </a>
+        </div>
+    </section>
+
 </main>
 
-<footer class="site-footer">
-    <div class="l-container">
-        <small>© 2026 Vancouver Tech Meetup（架空）</small>
-        <ul class="footer-links">
-            <li><a class="c-link" href="./styleguide.html">Styleguide</a></li>
-            <li><a class="c-link" href="./about.html">About</a></li>
-            <li><a class="c-link" href="./contact.html">Contact</a></li>
-        </ul>
+<footer class="footer">
+    <div class="footer__inner">
+
+        <div class="footer__brand">
+            <span class="footer__logo" aria-hidden="true"></span>
+            <p class="footer__name">Vancouver Tech Meetup</p>
+        </div>
+
+        <div class="footer__right">
+            <nav class="footer__nav" aria-label="フッターナビ">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="./index.html">Home</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="./contact.html">Contact</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="./faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+
+    <div class="footer__meta">
+        <p class="footer__text">2026 Vancouver Tech Meetup. All rights reserved.</p>
+    </div>
+
 </footer>
+
 </body>
 </html>
