@@ -1,0 +1,379 @@
+/* 要素の幅と高さの計算をより直感的にする為 */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans JP",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+    line-height: 1.6;
+    background: aliceblue;
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* Header */
+.header {
+    padding: 16px 0 48px;
+    min-height: 180px;
+    border-bottom: none;
+    background: darkgrey;
+}
+
+.header__inner {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1040px;
+    margin: 12px auto 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+    padding: 18px 28px;
+    gap: 16px;
+}
+
+.header__title {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 0.2px;
+}
+
+.header__nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.header__nav-link {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: background 0.15s ease;
+    letter-spacing: 0.2px;
+}
+
+.header__nav-link:hover {
+    background: rgba(0,0,0,0.06);
+    text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    .header__inner {
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 16px 18px;
+    }
+
+    .header__nav-list {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Containers / grid */
+.l-container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.l-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.l-grid--2 {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+    .l-grid--2 {
+        /* スマホの割合によって変更となる為、fractionを使用 */
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.section > .faq {
+    padding: 36px 0;
+}
+
+.section-title {
+    margin: 48px 0 32px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.c-card {
+    background: beige;
+    border: 1px solid beige;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.c-card__title {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.c-card__text {
+    margin: 0;
+    font-size: 16px;
+}
+
+.site-footer .l-container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 18px 20px;
+}
+
+/* .section の 子である .faq にだけ適用させる為。 */
+.section > .faq {
+    display: grid;
+    gap: 12px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.faq__item {
+    border: 1px solid rgba(0,0,0,0.18);
+    border-radius: 18px;
+    overflow: hidden;
+    background: white;
+}
+
+/* Q行（summary）: [Qアイコン][本文][開閉アイコン] */
+.faq__q {
+    list-style: none;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-columns: 44px 1fr 32px; /* 左(Q) / 中(本文) / 右(アイコン) */
+    column-gap: 16px;
+
+    align-items: center;
+
+    padding: 18px 18px; /* カードの中余白 */
+    font-weight: 800;
+}
+
+/* デフォルトマーカー消す */
+.faq__q::-webkit-details-marker {
+    display: none;
+}
+
+/* 左の Q を丸いアイコンっぽく（色は今のままでOK） */
+.faq__q-label {
+    grid-column: 1;
+    justify-self: center;
+    align-self: start;          /* 複数行でも上揃え */
+    margin-top: 2px;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.18);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 900;
+}
+
+/* 右上の開閉アイコン（画像の “∨ / ∧” のイメージ） */
+.faq__q::after {
+    content: "⌄";               /* 閉じてる時 */
+    grid-column: 3;
+    justify-self: end;
+    align-self: start;          /* 上寄せ */
+    margin-top: 6px;
+
+    font-size: 18px;
+    line-height: 1;
+    opacity: 0.8;
+}
+
+/* open でアイコン反転 */
+.faq__item[open] .faq__q::after {
+    content: "⌃";               /* 開いてる時 */
+}
+
+/* hover（色いらないなら消してOK） */
+.faq__q:hover,
+.faq__q:focus-visible {
+    outline: none;
+}
+
+/* A領域（QとAの間の仕切り線） */
+.faq__a {
+    border-top: 1px solid rgba(0,0,0,0.14);
+    padding: 18px 18px;
+}
+
+/* A行: [Aラベル][本文]。Q本文と開始位置を揃える */
+.faq__a-row {
+    display: grid;
+    grid-template-columns: 44px 1fr; /* Qの左列幅と合わせる */
+    column-gap: 16px;
+    align-items: start;
+}
+
+/* Aラベル（画像の左に大きめA） */
+.faq__a-label {
+    grid-column: 1;
+    justify-self: center;
+    align-self: start;
+    margin-top: 2px;
+
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.faq__a-body p {
+    margin: 0;
+}
+.faq__a-body p + p {
+    margin-top: 10px;
+}
+.faq__a-body ul {
+    margin: 10px 0 0;
+    padding-left: 18px;
+}
+
+.footer {
+    padding: 60px 0;
+    border-top: 1px solid lightgray;
+    background: white;
+}
+
+.footer__inner {
+    max-width: 1040px;
+    margin: 0 auto 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.footer__brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer__logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    background: whitesmoke;
+    display: inline-block;
+}
+
+.footer__name {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.footer__right {
+    text-align: right;
+    display: grid;
+    gap: 18px;
+}
+
+.footer__nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer__nav-link {
+    display: inline-block;
+    padding: 6px 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.footer__meta {
+    justify-content: flex-end;
+    gap: 24px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.footer__meta-link {
+    font-size: 14px;
+    color: darkslategray;
+}
+
+.footer__text {
+    margin: 0;
+    font-size: 14px;
+    color: darkslategray;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 640px) {
+    .footer__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__right {
+        text-align: left;
+        width: 100%;
+    }
+
+    .footer__nav-list {
+        justify-content: flex-start;
+    }
+
+    .footer__meta {
+        justify-content: flex-start;
+    }
+}
