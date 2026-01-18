@@ -1,0 +1,94 @@
+/*!* Header *!*/
+/*.header {*/
+/*    border-bottom: 1px solid beige;*/
+/*}*/
+
+/*.header__inner {*/
+/*    max-width: 1040px;*/
+/*    margin: 0 auto;*/
+/*    padding: 16px 20px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    gap: 16px;*/
+/*}*/
+
+/*.header__nav-list {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*    gap: 12px;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.header__nav-link {*/
+/*    display: inline-block;*/
+/*    padding: 8px 12px;*/
+/*    border-radius: 12px;*/
+/*}*/
+
+/*@media (max-width: 640px) {*/
+/*    .header__inner {*/
+/*        flex-direction: column;*/
+/*        align-items: flex-start;*/
+/*    }*/
+/*}*/
+/*.l-container {*/
+/*    max-width: 1040px;*/
+/*    margin: 0 auto;*/
+/*    padding: 0 20px;*/
+/*}*/
+
+/*.l-grid {*/
+/*    display: grid;*/
+/*    gap: 16px;*/
+/*}*/
+
+/*.l-grid--2 {*/
+/*    grid-template-columns: 1fr;*/
+/*}*/
+
+/*@media (min-width: 800px) {*/
+/*    .l-grid--2 {*/
+/*        !* スマホの割合によって変更となる為、fractionを使用 *!*/
+/*        grid-template-columns: 1fr 1fr;*/
+/*    }*/
+/*}*/
+
+/*.section {*/
+/*    padding: 36px 0;*/
+/*}*/
+
+/*.section-title {*/
+/*    margin: 0 0 16px;*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*.c-card {*/
+/*    background: beige;*/
+/*    border: 1px solid beige;*/
+/*    border-radius: 12px;*/
+/*    padding: 16px;*/
+/*}*/
+
+/*.c-card__title {*/
+/*    margin: 0 0 8px;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*.c-card__text {*/
+/*    margin: 0;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*!* footer *!*/
+/*.footer {*/
+/*    border-top: 1px solid beige;*/
+/*}*/
+
+/*.footer__inner {*/
+/*    max-width: 1040px;*/
+/*    margin: 0 auto;*/
+/*    padding: 18px 20px;*/
+/*}*/
