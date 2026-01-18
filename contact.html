@@ -3,139 +3,144 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vancouver Tech Meetup – 月例コミュニティイベント</title>
-    <meta name="description" content="バンクーバーの架空テックミートアップのcontactページ。" />
-
+    <title>Tokyo Tech Meetup – 月例コミュニティイベント</title>
+    <meta name="description" content="架空テックミートアップのcontactページ。" />
     <link rel="stylesheet" href="assets/css/pages/contact.css" />
-    <link rel="icon" href="./assets/img/vancouver.webp" />
+    <link rel="icon" href="assets/img/tokyo.webp" />
 </head>
+
 <body>
-    <header class="header">
-        <div class="header__inner">
-            <h1 class="header__title">Vancouver Tech Meetup</h1>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="./index.html" class="header__nav-link">ホーム</a></li>
-                    <li class="header__nav-item"><a href="./faq.html" class="header__nav-link">よくある質問</a></li>
-                    <li class="header__nav-item"><a href="./contact.html" class="header__nav-link">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </div>
+<header class="header">
+    <div class="header__inner">
+        <h1 class="header__title">Tokyo Tech Meetup</h1>
+        <nav class="header__nav" aria-label="ヘッダーナビ">
+            <ul class="header__nav-list">
+                <li><a href="./index.html" class="header__nav-link">ホーム</a></li>
+                <li><a href="./faq.html" class="header__nav-link">よくある質問</a></li>
+                <li><a href="./contact.html" class="header__nav-link">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
 
-        <div class="contact__inner-header">
-            <h2 class="contact__title">
-                お問い合わせ
-                <span class="contact__sub-title">contact</span>
-            </h2>
-        </div>
+    <div class="contact-header">
+        <h2 class="contact-header__title">
+            お問い合わせ
+            <span class="contact-header__sub">contact</span>
+        </h2>
+    </div>
+</header>
 
-    </header>
+<main>
+    <section class="contact" aria-labelledby="contact-heading">
+        <div class="contact__inner">
+            <h2 id="contact-heading" class="visually-hidden">お問い合わせ</h2>
+            <p class="contact__lead">
+                下記フォームに必要事項を入力の上お問い合わせください。<br />
+                お問い合わせ内容の確認後、担当者よりご連絡させていただきます。
+            </p>
 
-    <main>
-        <section class="contact">
-            <div class="contact__inner">
-
-                <div class="contact__description">
-                    下記フォームに必要事項を入力の上お問い合わせください。<br/>
-                    お問い合わせ内容の確認後、担当者よりご連絡させていただきます。
+            <form action="#" method="post" class="contact__form">
+                <div class="contact__row">
+                    <label for="first_name" class="contact__label">
+                        <span class="contact__badge">必須</span>
+                        お名前(姓):
+                    </label>
+                    <input
+                            type="text"
+                            id="first_name"
+                            name="first_name"
+                            class="contact__input"
+                            required
+                            placeholder="例）山田"
+                    />
                 </div>
 
-                <form action="#" method="post" class="contact__form">
+                <div class="contact__row">
+                    <label for="last_name" class="contact__label">
+                        <span class="contact__badge">必須</span>
+                        お名前(名):
+                    </label>
+                    <input
+                            type="text"
+                            id="last_name"
+                            name="last_name"
+                            class="contact__input"
+                            required
+                            placeholder="例）太郎"
+                    />
+                </div>
 
-                    <div class="contact__form-row">
-                        <label for="first_name" class="contact__label">
-                            <span class="contact_form-row-necessary">必須</span>
-                            お名前(姓):
-                        </label>
-                        <input
-                                type="text" id="first_name" name="first_name"
-                                class="contact__input"
-                                required
-                                placeholder="例）山田"
-                        />
-                    </div>
+                <div class="contact__row">
+                    <label for="email" class="contact__label">
+                        <span class="contact__badge">必須</span>
+                        メールアドレス:
+                    </label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="contact__input"
+                            required
+                            placeholder="example1234@example.com"
+                    />
+                </div>
 
-                    <div class="contact__form-row">
-                        <label for="last_name" class="contact__label">
-                            <span class="contact_form-row-necessary">必須</span>
-                            お名前(名):
-                        </label>
-                        <input
-                                type="text" id="last_name"
-                                name="last_name" class="contact__input"
-                                required
-                                placeholder="例）太郎"
-                        />
-                    </div>
+                <div class="contact__row">
+                    <label for="tel" class="contact__label">
+                        <span class="contact__badge">必須</span>
+                        電話番号:
+                    </label>
+                    <input
+                            type="tel"
+                            id="tel"
+                            name="tel"
+                            class="contact__input"
+                            required
+                            placeholder="09012345678"
+                    />
+                </div>
 
-                    <div class="contact__form-row">
-                        <label for="email" class="contact__label">
-                            <span class="contact_form-row-necessary">必須</span>
-                            メールアドレス:
-                        </label>
-                        <input
-                                type="email" id="email" name="email"
-                                class="contact__input" required
-                                placeholder="example1234@example.com"
-                        />
-                    </div>
+                <div class="contact__row contact__row--textarea">
+                    <label for="message" class="contact__label">
+                        <span class="contact__badge">必須</span>
+                        お問合せ内容:
+                    </label>
+                    <textarea
+                            id="message"
+                            name="message"
+                            class="contact__textarea"
+                            required
+                            placeholder="こちらにお問い合わせ内容をご記入ください。"
+                    ></textarea>
+                </div>
 
-                    <div class="contact__form-row">
-                        <label for="tel" class="contact__label">
-                            <span class="contact_form-row-necessary">必須</span>
-                            電話番号:
-                        </label>
-                        <input
-                                type="tel" id="tel" name="tel"
-                                class="contact__input" required
-                                placeholder="09012345678"
-                        />
-                    </div>
+                <div class="contact__actions">
+                    <button type="submit" class="contact__button">送信</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
 
-                    <div class="contact__form-row-message">
-                        <label for="message" class="contact__label">
-                            <span class="contact_form-row-necessary">必須</span>
-                            お問合せ内容:
-                        </label>
-                        <textarea
-                                placeholder="こちらにお問い合わせ内容をご記入ください。"
-                                id="message" name="message"
-                                class="contact__textarea"
-                                required
-                        ></textarea>
-                    </div>
-
-                    <div class="contact__button-wrapper">
-                        <button type="submit" class="contact__button">送信</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__inner">
-
-            <div class="footer__brand">
-                <span class="footer__logo" aria-hidden="true"></span>
-                <p class="footer__name">Vancouver Tech Meetup</p>
-            </div>
-
-            <div class="footer__right">
-                <nav class="footer__nav" aria-label="フッターナビ">
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="./index.html">Home</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="./contact.html">Contact</a></li>
-                        <li class="footer__nav-item"><a class="footer__nav-link" href="./faq.html">FAQ</a></li>
-                    </ul>
-                </nav>
-            </div>
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__brand">
+            <span class="footer__logo" aria-hidden="true"></span>
+            <p class="footer__name">Tokyo Tech Meetup</p>
         </div>
 
-        <div class="footer__meta">
-            <p class="footer__text">2026 Vancouver Tech Meetup. All rights reserved.</p>
-        </div>
+        <nav class="footer__nav" aria-label="フッターナビ">
+            <ul class="footer__nav-list">
+                <li><a class="footer__nav-link" href="./index.html">Home</a></li>
+                <li><a class="footer__nav-link" href="./contact.html">Contact</a></li>
+                <li><a class="footer__nav-link" href="./faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    </footer>
-
+    <div class="footer__meta">
+        <p class="footer__text">© 2026 Tokyo Tech Meetup. All rights reserved.</p>
+    </div>
+</footer>
 </body>
+</html>
