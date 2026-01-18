@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vancouver Tech Meetup – 月例コミュニティイベント</title>
-    <meta name="description" content="バンクーバーの架空テックミートアップのランディングページ。" />
+    <title>Tokyo Tech Meetup – 月例コミュニティイベント</title>
+    <meta name="description" content="東京の架空テックミートアップのランディングページ。" />
 
 <!--    <link rel="stylesheet" href="assets/css/common/base.css" />-->
 <!--    <link rel="stylesheet" href="assets/css/common/layout.css" />-->
     <link rel="stylesheet" href="assets/css/pages/main.css" />
-    <link rel="icon" href="./assets/img/vancouver.webp" />
+    <link rel="icon" href="assets/img/tokyo.webp" />
 </head>
 
 <body>
@@ -32,11 +32,11 @@
         <div class="site-content">
 
             <section class="section" aria-labelledby="hero-title">
-                <h1 id="hero-title" class="hero-title">実務に効くトーク。つながる場。</h1>
+                <h1 id="hero-title" class="hero-title">実務で効く学びを、半日で持ち帰る。</h1>
 
                 <p class="hero-lead">
-                    バンクーバーの架空テックミートアップのランディングページ。<br/>
-                    セマンティックHTMLとCSSのみで構築しています。
+                    15分トーク×3本＋休憩＋ライトなネットワーキング。<br/>
+                    初参加でも話しやすいように、話題プロンプト付きで進行します。
                 </p>
 
                 <dl class="hero-meta">
@@ -46,11 +46,11 @@
                     </div>
                     <div class="hero-meta__item">
                         <dt>時間</dt>
-                        <dd>13:00–17:30</dd>
+                        <dd>13:00–17:30(途中入場も可能ではあります。)</dd>
                     </div>
                     <div class="hero-meta__item">
                         <dt>会場</dt>
-                        <dd>ダウンタウン・バンクーバー</dd>
+                        <dd>東京駅周辺(徒歩5分圏内)</dd>
                     </div>
                 </dl>
             </section>
@@ -143,30 +143,105 @@
                 <ul class="l-grid speaker-list">
                     <li class="c-card speaker">
                         <article aria-labelledby="sp1-name">
-                            <div class="speaker__media" aria-hidden="true"></div>
-                            <h3 id="sp1-name" class="c-card__title">田中 太郎</h3>
-                            <p class="c-card__text">フロントエンドエンジニア · CSS設計</p>
+                            <div class="speaker__media">
+                                <img
+                                        class="speaker__photo"
+                                        src="./assets/img/speakers/sample_1.webp"
+                                        alt="高橋 次郎"
+                                        loading="lazy"
+                                />
+                            </div>
+
+                            <p class="speaker__role">Software Engineer</p>
+
+                            <h3 id="sp1-name" class="speaker__name">
+                                <span class="speaker__name-ja">高橋 次郎</span>
+                                <span class="speaker__name-en">Takagi Kazuki</span>
+                            </h3>
+
+                            <p class="speaker__bio">プロダクトエンジニア · API設計</p>
                         </article>
                     </li>
 
                     <li class="c-card speaker">
                         <article aria-labelledby="sp2-name">
-                            <div class="speaker__media" aria-hidden="true"></div>
-                            <h3 id="sp2-name" class="c-card__title">高橋 次郎</h3>
-                            <p class="c-card__text">プロダクトエンジニア · API設計</p>
+                            <div class="speaker__media">
+                                <img
+                                        class="speaker__photo"
+                                        src="assets/img/speakers/sample_1.webp"
+                                        alt="高橋 次郎"
+                                        loading="lazy"
+                                        decoding="async"
+                                />
+                            </div>
+
+                            <p class="speaker__role">Software Engineer</p>
+
+                            <h3 id="sp2-name" class="speaker__name">
+                                <span class="speaker__name-ja">高橋 次郎</span>
+                                <span class="speaker__name-en">Takagi Kazuki</span>
+                            </h3>
+
+                            <p class="speaker__bio">フロントエンドエンジニア</p>
                         </article>
                     </li>
 
                     <li class="c-card speaker">
                         <article aria-labelledby="sp3-name">
-                            <div class="speaker__media" aria-hidden="true"></div>
-                            <h3 id="sp3-name" class="c-card__title">佐藤 三郎</h3>
-                            <p class="c-card__text">QA／自動化 · 実務的なテスト</p>
+                            <div class="speaker__media">
+                                <img
+                                        class="speaker__photo"
+                                        src="./assets/img/speakers/sample_1.webp"
+                                        alt="佐藤 三郎"
+                                        loading="lazy"
+                                        decoding="async"
+                                />
+                            </div>
+
+                            <p class="speaker__role">Software Engineer</p>
+
+                            <h3 id="sp3-name" class="speaker__name">
+                                <span class="speaker__name-ja">佐藤 三郎</span>
+                                <span class="speaker__name-en">Sato Saburo</span>
+                            </h3>
+
+                            <p class="speaker__bio">QA／自動化 · 実務的なテスト</p>
                         </article>
                     </li>
                 </ul>
             </section>
 
+            <section class="venue" aria-labelledby="venue-title">
+                <h2 id="venue-title" class="venue__title">会場</h2>
+
+                <div class="venue__map">
+                    <iframe
+                            class="venue__map-iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3240.8319461296114!2d139.76448647564553!3d35.68113977258731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1768714547262!5m2!1sja!2sjp"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="会場の地図"
+                            allowfullscreen
+                    ></iframe>
+
+                    <div class="venue__map-card" aria-label="会場情報">
+                        <h3 class="venue__map-card-title">東京駅</h3>
+                        <p class="venue__map-card-text">〒100-0005 東京都千代田区丸の内1丁目</p>
+
+                        <div class="venue__map-card-actions">
+                            <a
+                                    class="venue__route"
+                                    href="https://www.google.com/maps/dir/?api=1&destination=東京都千代田区丸の内1丁目"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Google マップでルートを表示"
+                            >
+                                ルートを表示
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -184,7 +259,6 @@
             </a>
         </div>
     </section>
-
 </main>
 
 <footer class="footer">
@@ -192,7 +266,7 @@
 
         <div class="footer__brand">
             <span class="footer__logo" aria-hidden="true"></span>
-            <p class="footer__name">Vancouver Tech Meetup</p>
+            <p class="footer__name">Tokyo Tech Meetup</p>
         </div>
 
         <div class="footer__right">
@@ -207,7 +281,7 @@
     </div>
 
     <div class="footer__meta">
-        <p class="footer__text">2026 Vancouver Tech Meetup. All rights reserved.</p>
+        <p class="footer__text">2026 Tokyo Tech Meetup. All rights reserved.</p>
     </div>
 
 </footer>
