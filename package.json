@@ -1,0 +1,24 @@
+{
+  "name": "html-semantic-site",
+  "version": "1.0.0",
+  "description": "バンクーバーの架空のテックミートアップコミュニティを想定した、完全に静的なランディングサイトです。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zigzagdev/html-semantic-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zigzagdev/html-semantic-site/issues"
+  },
+  "homepage": "https://github.com/zigzagdev/html-semantic-site#readme",
+  "devDependencies": {
+    "prettier": "^3.8.0"
+  }
+}
