@@ -6,6 +6,8 @@
     <title>Tokyo Tech Meetup – 月例コミュニティイベント</title>
     <meta name="description" content="東京の架空テックミートアップのランディングページ。" />
 
+    <link rel="stylesheet" href="assets/css/common/header.css" />
+    <link rel="stylesheet" href="assets/css/common/footer.css" />
     <link rel="stylesheet" href="assets/css/pages/index.css" />
     <link rel="icon" href="assets/img/tokyo.webp" />
 </head>
@@ -13,7 +15,7 @@
 <body>
 <header class="header">
     <div class="header__inner">
-        <h1 class="header__title">Vancouver Tech Meetup</h1>
+        <h1 class="header__title">Tokyo Tech Meetup</h1>
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="./index.html" class="header__nav-link">ホーム</a></li>
@@ -155,7 +157,7 @@
                     <li class="c-card speaker">
                         <article aria-labelledby="sp2-name">
                             <div class="speaker__media">
-                                <img class="speaker__photo" src="assets/img/speakers/sample_1.webp" alt="高橋 次郎" loading="lazy" decoding="async" />
+                                <img class="speaker__photo" src="assets/img/speakers/sample_2.webp" alt="高橋 次郎" loading="lazy" decoding="async" />
                             </div>
                             <p class="speaker__role">Software Engineer</p>
                             <h3 id="sp2-name" class="speaker__name">
@@ -169,7 +171,7 @@
                     <li class="c-card speaker">
                         <article aria-labelledby="sp3-name">
                             <div class="speaker__media">
-                                <img class="speaker__photo" src="./assets/img/speakers/sample_1.webp" alt="佐藤 三郎" loading="lazy" decoding="async" />
+                                <img class="speaker__photo speaker__photo--sp3" src="./assets/img/speakers/sample_3.webp" alt="佐藤 三郎" loading="lazy" decoding="async" />
                             </div>
                             <p class="speaker__role">Software Engineer</p>
                             <h3 id="sp3-name" class="speaker__name">
@@ -188,32 +190,14 @@
                 <div class="venue__map">
                     <iframe
                             class="venue__map-iframe"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3240.8319461296114!2d139.76448647564553!3d35.68113977258731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1768714547262!5m2!1sja!2sjp"
+                            src="https://www.google.com/maps?q=東京駅&output=embed&hl=ja"
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
                             title="会場の地図"
                             allowfullscreen
                     ></iframe>
-
-                    <div class="venue__map-card" aria-label="会場情報">
-                        <h3 class="venue__map-card-title">東京駅</h3>
-                        <p class="venue__map-card-text">〒100-0005 東京都千代田区丸の内1丁目</p>
-
-                        <div class="venue__map-card-actions">
-                            <a
-                                    class="venue__route"
-                                    href="https://www.google.com/maps/dir/?api=1&destination=東京都千代田区丸の内1丁目"
-                                    target="_blank"
-                                    rel="noopener"
-                                    aria-label="Google マップでルートを表示"
-                            >
-                                ルートを表示
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </section>
-
         </div>
     </div>
 
@@ -252,7 +236,10 @@
     </div>
 
     <div class="footer__meta">
-        <p class="footer__text">2026 Tokyo Tech Meetup. All rights reserved.</p>
+        <div class="footer__text">
+            2026 Tokyo Tech Meetup. <span class="footer__break" aria-hidden="true"></span>
+            All rights reserved.
+        </div>
     </div>
 </footer>
 
