@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tokyo Tech Meetup – 月例コミュニティイベント</title>
     <meta name="description" content="架空テックミートアップのcontactページ。" />
+    <link rel="stylesheet" href="assets/css/common/header.css" />
+    <link rel="stylesheet" href="assets/css/common/footer.css" />
     <link rel="stylesheet" href="assets/css/pages/contact.css" />
     <link rel="icon" href="assets/img/tokyo.webp" />
 </head>
@@ -33,10 +35,13 @@
 <main>
     <section class="contact" aria-labelledby="contact-heading">
         <div class="contact__inner">
-            <h2 id="contact-heading" class="visually-hidden">お問い合わせ</h2>
             <p class="contact__lead">
-                下記フォームに必要事項を入力の上お問い合わせください。<br />
-                お問い合わせ内容の確認後、担当者よりご連絡させていただきます。
+                下記フォームに必要事項を入力の上
+                <span class="form__break" aria-hidden="true"></span>
+                お問い合わせください。<br />
+                お問い合わせ内容の確認後、
+                <span class="form__break" aria-hidden="true"></span>
+                担当者よりご連絡させていただきます。
             </p>
 
             <form action="#" method="post" class="contact__form">
@@ -139,7 +144,10 @@
     </div>
 
     <div class="footer__meta">
-        <p class="footer__text">© 2026 Tokyo Tech Meetup. All rights reserved.</p>
+        <div class="footer__text">
+            2026 Tokyo Tech Meetup. <span class="footer__break" aria-hidden="true"></span>
+            All rights reserved.
+        </div>
     </div>
 </footer>
 </body>
