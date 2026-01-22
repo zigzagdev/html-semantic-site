@@ -1,4 +1,4 @@
-# Vancouver Tech Meetup Landing (Static)
+# Tokyo Tech Meetup Landing (Static)
 
 架空のテックミートアップコミュニティを想定した、完全に静的なランディングサイトです。
 
