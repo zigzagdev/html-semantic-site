@@ -278,6 +278,7 @@ a:hover {
 }
 
 @media (max-width: 640px) {
+    /* 画面占有を抑えてスクロール量を減らす */
     .venue__map {
         height: 360px;
     }
