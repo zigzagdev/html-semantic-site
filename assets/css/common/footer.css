@@ -65,7 +65,7 @@
     letter-spacing: 1px;
 }
 
-/* Responsive */
+/* レスポンシブ対応 */
 @media (max-width: 640px) {
     .footer__inner {
         flex-direction: column;
